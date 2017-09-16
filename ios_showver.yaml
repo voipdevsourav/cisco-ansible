@@ -1,0 +1,13 @@
+--- 
+- name: "GET version details"
+  hosts: ios 
+  gather_facts: false
+  #remote_user: sourav 
+
+
+  tasks:
+
+    - name: gather details
+      ios_command:
+        commands: show version
+      
